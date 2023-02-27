@@ -1,0 +1,122 @@
+
+#game-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    /*x-offset, y-offset, blue, spread, color */
+    box-shadow: inset 0 0 10vh 5vh #00000070;
+}
+
+    #game-window td {
+        vertical-align: top;
+        overflow: hidden;
+    }
+
+
+.cookie.column {
+    width: 35%;
+    box-shadow: inset 0 -35vh 14vh 20px #00000080;
+}
+
+.left.border {
+    margin: 0;
+    height: 520px;
+}
+
+.minigame.column {
+    min-width: 120px;
+    width: 47.5%;
+    padding: 0px;
+}
+
+.upgrade.column {
+    min-width: 300px;
+    padding: 0px;
+}
+
+
+#cookie-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    border-radius: 100%;
+    display: block;
+    /*will try and keep aspect ratio will not go below */
+    /*will take .2s to grow and shrink*/
+    transition: all .2s ease-in-out;
+}
+
+    #cookie-button:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.notif-toasts {
+    margin-bottom: 1%;
+}
+
+    .notif-toasts .toast {
+        --bs-toast-bg: var(--background-color);
+        border: 4px ridge var(--border-color);
+    }
+
+    .notif-toasts .toast-body {
+        padding: 0.2em 0.75em;
+    }
+
+.toast-container, .toast {
+    margin-bottom: 0.5em !important;
+}
+
+.golden-cookie {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 4%;
+    min-width: 100px;
+    z-index: 1000;
+    border-radius: 100%;
+    cursor: pointer;
+    animation-name: golden-cookie;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes golden-cookie {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.top-horizontal-panel {
+    margin-top: -7px;
+    width: 700px;
+}
+
+.horizontal-panel {
+    margin-top: 12px;
+}

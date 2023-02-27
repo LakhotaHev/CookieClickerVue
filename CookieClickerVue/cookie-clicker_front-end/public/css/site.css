@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+body
+{
+    font-family: 'Merriweather', Georgia , serif !important;
+    background-image: url('/images/bgBlue.jpg');
+    color:white !important;
+}
+
+html 
+{
+  font-size: 14px;
+}
+
+@media (min-width: 768px) 
+{
+  html 
+  {
+    font-size: 16px;
+  }
+}
+
+html 
+{
+  position: relative;
+  min-height: 100%;
+}
+
+.bounce-effect {
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

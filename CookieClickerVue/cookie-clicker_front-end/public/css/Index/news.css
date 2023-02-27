@@ -1,0 +1,90 @@
+﻿.news-section
+{   
+    background-color:#20202060;
+    box-shadow:inset 0 0 1em 1em #16161670;
+    max-height: 150px;
+}
+
+.news-section table
+{
+     width:100%;
+     height:100%;
+     border-collapse:collapse;
+}
+.news-section td
+{
+    text-align:center;
+}
+
+.news-section .news-column
+{
+    width: 73%;
+
+}
+
+.news-section .panelbutton
+{
+    width: 100px;
+    height: 48px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-right: 0px;
+    font-size:calc(11px + 0.4vw);
+    color: #999;
+    text-shadow: 0px 1px 0px #444, 0px 0px 4px #000;
+    padding-bottom: 0px;
+}
+.news-section .panelbutton:hover
+{
+    cursor:pointer;
+    color:white;
+    text-shadow: 0px 1px 0px #999, 0px 0px 4px #000;
+}
+
+.news-section #prefs-button
+{
+    padding-top: 16px;
+    background-position: 15px 10px;
+}
+
+.news-section #prefs-button:hover
+{
+    padding-top: 16px;
+    background-position: 15px -95px;
+}
+
+.news-section #stats-button
+{
+    padding-top: 16px;
+    background-position: 15px -48px;
+}
+
+.news-section #stats-button:hover
+{
+    padding-top: 16px;
+    background-position: 15px -144px;
+}
+
+.news-section #info-button
+{
+    padding-top: 16px;
+    background-position: -100px 0px;
+}
+
+.news-section #info-button:hover
+{
+    padding-top: 16px;
+    background-position: -100px -96px;
+}
+
+.news-section #save-button
+{
+    padding-top: 16px;
+    background-position: -100px -48px;
+}
+
+.news-section #save-button:hover
+{
+    padding-top: 16px;
+    background-position: -100px 48px;
+}
