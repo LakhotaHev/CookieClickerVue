@@ -10,7 +10,7 @@
             </div>
             <div id="statsGeneral"></div>
             <div class="listing">
-                <b>Cookies in bank:</b>
+                <b>Cookies in da bank:</b>
                 <div class="price plain">
                 <div class="tinyCookie"></div>
                 {{ roundedCookies }}
